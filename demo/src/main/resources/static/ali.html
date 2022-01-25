@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html >
+<head>
+<meta charset="UTF-8"/>
+<title></title>
+</head>
+<body>
+    <div>
+        <table>
+            <thead>
+                <tr>
+                    <th>Id</th>    
+                    <th>Name</th>
+                    <th>Price</th>
+                    <th>Qty</th>
+                </tr>    
+            </thead>   
+            <tbody>
+                <tr th:each="item:${items}">
+                    <td th:text="${item.Id}"/>
+                       <td th:text="${item.Name}"/>
+                       <td th:text="${item.Price}"/>
+                       <td th:text="${item.Qty}"/>
+                    
+                </tr>  
+                
+            </tbody>
+            
+        </table>    
+        
+        
+    </div>   
+    
+    
+</body>
+</html>
